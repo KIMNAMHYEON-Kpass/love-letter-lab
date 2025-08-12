@@ -23,7 +23,9 @@
 
 - pip install -r requirements.txt
 
-- flask run 또는 python app/main.py
+- python app/main.py
+
+- GET http://127.0.0.1:5000/healthz → {"ok": true}
 
 - Colab 노트북은 notebooks/ 참조(환경 셀 포함)
 
