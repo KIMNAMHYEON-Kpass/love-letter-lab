@@ -1,0 +1,26 @@
+{
+  "정중·낭만": {
+    "humor": 0.2,
+    "directness": 0.3,
+    "formality": 0.9,
+    "emotion_intensity": 0.7,
+    "metaphor": 0.8,
+    "sincerity": 0.9
+  },
+  "직설·건조": {
+    "humor": 0.1,
+    "directness": 0.9,
+    "formality": 0.6,
+    "emotion_intensity": 0.3,
+    "metaphor": 0.2,
+    "sincerity": 0.7
+  },
+  "재치·가벼움": {
+    "humor": 0.8,
+    "directness": 0.5,
+    "formality": 0.4,
+    "emotion_intensity": 0.6,
+    "metaphor": 0.6,
+    "sincerity": 0.5
+  }
+}
