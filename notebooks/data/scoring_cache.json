@@ -1,0 +1,182 @@
+{
+  "samples": [
+    {
+      "text": "민수님, 발표를 앞두고 긴장하셨겠지만 저는 곁에서 조용히 응원하고 싶습니다. 동기로 지내며 알게 된 고마움이 커졌습니다. 조심스럽지만 제 마음을 말해볼게요.",
+      "persona": "정중·낭만"
+    },
+    {
+      "text": "민수님, 너무 과장하진 않을게요. 그냥 같이 커피 한 잔 하면서 가볍게 이야기 나눌 수 있을까요?",
+      "persona": "재치·가벼움"
+    },
+    {
+      "text": "민수님, 솔직하게 말할게요. 저는 더 가까워지고 싶습니다. 부담되지 않는 선에서 시간을 허락해 주실 수 있을까요!",
+      "persona": "직설·건조"
+    }
+  ],
+  "results": [
+    {
+      "score_0_1": 0.73,
+      "raw": 0.995,
+      "persona": {
+        "name": "정중·낭만",
+        "vector": {
+          "humor": 0.2,
+          "directness": 0.3,
+          "formality": 0.9,
+          "emotion_intensity": 0.7,
+          "metaphor": 0.8,
+          "sincerity": 0.9
+        }
+      },
+      "reasons": [
+        {
+          "rule": "positive_words",
+          "count": 2,
+          "weight": 0.6
+        },
+        {
+          "rule": "negative_words",
+          "count": 0,
+          "weight": -0.6
+        },
+        {
+          "rule": "profanity",
+          "count": 0,
+          "weight": -2.0
+        },
+        {
+          "rule": "formality_ratio",
+          "value": 0.16,
+          "weight": 0.6
+        },
+        {
+          "rule": "exclaim_count",
+          "value": 0,
+          "penalty_per_extra": -0.2
+        },
+        {
+          "rule": "repetition_3gram",
+          "value": 0.0,
+          "threshold": 0.15,
+          "penalty": -0.3
+        },
+        {
+          "rule": "total_raw",
+          "value": 0.995
+        }
+      ]
+    },
+    {
+      "score_0_1": 0.495,
+      "raw": -0.02,
+      "persona": {
+        "name": "재치·가벼움",
+        "vector": {
+          "humor": 0.8,
+          "directness": 0.5,
+          "formality": 0.4,
+          "emotion_intensity": 0.6,
+          "metaphor": 0.6,
+          "sincerity": 0.5
+        }
+      },
+      "reasons": [
+        {
+          "rule": "positive_words",
+          "count": 0,
+          "weight": 0.6
+        },
+        {
+          "rule": "negative_words",
+          "count": 0,
+          "weight": -0.6
+        },
+        {
+          "rule": "profanity",
+          "count": 0,
+          "weight": -2.0
+        },
+        {
+          "rule": "formality_ratio",
+          "value": 0.13,
+          "weight": 0.6
+        },
+        {
+          "rule": "exclaim_count",
+          "value": 0,
+          "penalty_per_extra": -0.2
+        },
+        {
+          "rule": "repetition_3gram",
+          "value": 0.0,
+          "threshold": 0.15,
+          "penalty": -0.3
+        },
+        {
+          "rule": "humor_hit",
+          "delta": 0.2
+        },
+        {
+          "rule": "total_raw",
+          "value": -0.02
+        }
+      ]
+    },
+    {
+      "score_0_1": 0.505,
+      "raw": 0.02,
+      "persona": {
+        "name": "직설·건조",
+        "vector": {
+          "humor": 0.1,
+          "directness": 0.9,
+          "formality": 0.6,
+          "emotion_intensity": 0.3,
+          "metaphor": 0.2,
+          "sincerity": 0.7
+        }
+      },
+      "reasons": [
+        {
+          "rule": "positive_words",
+          "count": 0,
+          "weight": 0.6
+        },
+        {
+          "rule": "negative_words",
+          "count": 0,
+          "weight": -0.6
+        },
+        {
+          "rule": "profanity",
+          "count": 0,
+          "weight": -2.0
+        },
+        {
+          "rule": "formality_ratio",
+          "value": 0.2,
+          "weight": 0.6
+        },
+        {
+          "rule": "exclaim_count",
+          "value": 1,
+          "penalty_per_extra": -0.2
+        },
+        {
+          "rule": "repetition_3gram",
+          "value": 0.0,
+          "threshold": 0.15,
+          "penalty": -0.3
+        },
+        {
+          "rule": "directness_match",
+          "delta": 0.2
+        },
+        {
+          "rule": "total_raw",
+          "value": 0.02
+        }
+      ]
+    }
+  ]
+}
